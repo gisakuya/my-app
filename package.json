@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist-t": "electron-builder --dir",
+    "dist-w": "electron-builder --win portable -p",
+    "dist-l": "electron-builder --linux AppImage",
+    "dist-wl": "electron-builder -wl",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.gzxk.myapp",
+    "win": {
+      "publish": "github"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.2",
+    "electron-builder": "^21.2.0"
+  }
+}
