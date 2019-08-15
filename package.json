@@ -6,9 +6,10 @@
   "scripts": {
     "start": "electron .",
     "dist-t": "electron-builder --dir",
-    "dist-w": "electron-builder --win portable -p",
+    "dist-w": "electron-builder --win portable",
     "dist-l": "electron-builder --linux AppImage",
     "dist-wl": "electron-builder -wl",
+    "dist-p": "electron-builder --win portable -p=onTag",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
