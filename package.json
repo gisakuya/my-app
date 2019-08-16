@@ -6,10 +6,10 @@
   "scripts": {
     "start": "electron .",
     "dist-t": "electron-builder --dir",
-    "dist-w": "electron-builder --win portable",
+    "dist-w": "electron-builder --win",
     "dist-l": "electron-builder --linux AppImage",
     "dist-wl": "electron-builder -wl",
-    "dist-p": "electron-builder --win portable -p=onTag",
+    "dist-p": "electron-builder --win portable -p always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
@@ -22,6 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^6.0.2",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^21.2.0",
+    "electron-updater": "^4.1.2"
   }
 }
