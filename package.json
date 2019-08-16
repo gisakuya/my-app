@@ -9,7 +9,7 @@
     "dist-w": "electron-builder --win",
     "dist-l": "electron-builder --linux AppImage",
     "dist-wl": "electron-builder -wl",
-    "dist-p": "electron-builder --win portable -p always",
+    "dist-p": "electron-builder --win -p always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
